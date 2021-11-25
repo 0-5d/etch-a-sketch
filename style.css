@@ -1,0 +1,18 @@
+.gridBody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.gridRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+.gridSquare {
+    border:solid red;
+    min-width: 50px;
+    min-height:50px;
+}
