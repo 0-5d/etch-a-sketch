@@ -12,7 +12,13 @@
 }
 
 .gridSquare {
-    border:solid red;
+    border: 5px solid black;
+    min-width: 50px;
+    min-height:50px;
+}
+
+.gridSquareDark {
+    background-color: black;
     min-width: 50px;
     min-height:50px;
 }
