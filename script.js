@@ -12,3 +12,14 @@ for (i = 0; i < 17; i++) {
     }
     gridBody.appendChild(gridRow);
 }
+
+function clear() {
+    const clearable = Array.from(document.querySelectorAll('.gridSquareDark'));
+    for (i = 0; i < clearable.length; i++) {
+        clearable[i].classList.remove('gridSquareDark');
+        clearable[i].classList.add('gridSquare');
+    }
+}
+
+const clearButton = document.getElementById('clearButton');
+clearButton.addEventListener('click', clear);
