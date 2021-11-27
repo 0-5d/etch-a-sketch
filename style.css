@@ -1,24 +1,31 @@
 .gridBody {
+    border: solid red;
+    max-height: 960px;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 .gridRow {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
+    border: solid purple;
+    max-width: 960px;
 }
 
-.gridSquare {
-    border: 5px solid black;
-    min-width: 50px;
-    min-height:50px;
+.gridSquare {   
+    display: flex;
+    height:50px;
+    width: 5-px;
+    border: solid black;
+    max-height: 50px;
+    max-width: 50px;
+    flex: auto, auto, auto;
 }
 
 .gridSquareDark {
     background-color: black;
-    min-width: 50px;
-    min-height:50px;
+    max-height: 50px;
+    max-width: 50px;
+    
 }
