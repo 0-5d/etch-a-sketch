@@ -1,28 +1,20 @@
 .gridBody {
     border: solid red;
-    max-height: 960px;
-    max-width: 960px;
-    min-height: 960px;
-    min-width: 960px;
+    height: 960px;
+    width: 960px;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .gridSquare {   
-    display: flex;
     height: 50px;
     width: 50px;
     border: solid black;
-    flex: 100px, 100px, 100px;
 }
 
 .gridSquareDark {
-    display: flex;
     height:50px;
     width: 50px;
     border: solid black;
-    flex: 100, 100, 100;
     background-color: black;
 }
