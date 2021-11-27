@@ -1,20 +1,5 @@
-.gridBody {
-    border: solid red;
+.grid {
     height: 960px;
     width: 960px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gridSquare {   
-    height: 50px;
-    width: 50px;
-    border: solid black;
-}
-
-.gridSquareDark {
-    height:50px;
-    width: 50px;
-    border: solid black;
-    background-color: black;
+    display: grid;
 }

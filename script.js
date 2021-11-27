@@ -1,13 +1,17 @@
-const gridBody = document.getElementById("gridBody");
-for (i = 0; i < 50; i++) {
-    for (n = 0; n < 50; n++) {
-    const gridSquare = document.createElement('div');
-    gridSquare.classList.add("gridSquare")
-    gridSquare.addEventListener('mouseover', function (){
-        gridSquare.classList.remove('gridSquare');
-        gridSquare.classList.add('gridSquareDark');
-    });
-    gridBody.appendChild(gridSquare);
+const grid = document.getElementById("grid");
+let size = 16;
+
+function changeColor(e) {
+    e.style.backgroundColor = black;
+}
+
+for (i = 0; i < 50 * 50; i++) {
+    grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+    for (i = 0; i < size * size; i++) {
+        const gridSquare = document.createElement('div');
+        gridSquare.addEventListener('mouseover', changeColor);
+        grid.appendChild(gridSquare);
     }
 }
 
