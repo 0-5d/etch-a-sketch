@@ -2,30 +2,27 @@
     border: solid red;
     max-height: 960px;
     max-width: 960px;
+    min-height: 960px;
+    min-width: 960px;
     display: flex;
-    flex-direction: column;
-}
-
-.gridRow {
-    display: flex;
-    flex-direction: row;
-    border: solid purple;
-    max-width: 960px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 .gridSquare {   
     display: flex;
-    height:50px;
-    width: 5-px;
+    height: 50px;
+    width: 50px;
     border: solid black;
-    max-height: 50px;
-    max-width: 50px;
-    flex: auto, auto, auto;
+    flex: 100px, 100px, 100px;
 }
 
 .gridSquareDark {
+    display: flex;
+    height:50px;
+    width: 50px;
+    border: solid black;
+    flex: 100, 100, 100;
     background-color: black;
-    max-height: 50px;
-    max-width: 50px;
-    
 }
