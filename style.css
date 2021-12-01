@@ -1,5 +1,13 @@
 .grid {
-    height: 960px;
-    width: 960px;
+    height: 510px;
+    width: 510px;
     display: grid;
+}
+
+.gridSquareDark {
+    background-color: black;
+}
+
+.buttons {
+    display: flex;
 }
